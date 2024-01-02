@@ -1,0 +1,118 @@
+.body{
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../imagens/background.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+.bot {
+  position: absolute;
+  top: 30%;
+  left: 120px;
+  transform: translateY(-50%);
+  opacity: 0;
+}
+.dropb {
+  background-color: #6c83cfb4;
+  color: rgb(255, 255, 255);
+  padding: 16px;
+  font-size: 20px;
+  border: none;
+  border-radius: 2%;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.drop-conteudo {
+  display: none;
+  position: absolute;
+  background-color: #6c83cfb4;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.281);
+  z-index: 1;
+  font-size: 20px;
+}
+.drop-conteudo a {
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.drop-conteudo a:hover {background-color: #80709e;}
+.dropdown:hover .drop-conteudo {display: block;}
+.dropdown:hover .dropb {background-color: #80709e;}
+
+
+
+
+.fundo-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0;
+}
+
+.pipboy{
+  position: absolute;
+  opacity: 0;
+}
+
+.noman{
+  position: absolute;
+  opacity: 0;
+}
+
+.mirror{
+  position: absolute;
+  opacity: 0;
+}
+
+.hades{
+  position: absolute;
+  opacity: 0;
+}
+
+.maria{
+  position: absolute;
+  opacity: 0;
+}
+
+
+.texto{
+  position: absolute;
+  border-radius: 15px;
+  width: 400px;
+  padding: 20px;
+  background-color: rgba(169, 148, 180, 0.5);
+  opacity: 0;
+}
+p{
+  text-indent: 30px;
+  text-align: justify;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+
+
+@media screen and (max-width: 1600px) {
+  .maria{
+    width: 400px;
+    height: 750px;
+  }
+  .noman{
+    width: 700px;
+    height: 750px;
+  }
+}
